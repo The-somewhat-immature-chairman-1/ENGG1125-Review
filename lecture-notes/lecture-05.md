@@ -73,16 +73,16 @@ $L(x) = 1 + \frac{1}{2}x$。
 
 <details>
 <summary>💡 点击查看答案与解题思路</summary>
-(a) 球的体积 \( V = \frac{4}{3}\pi r^3 \) 。
-两边对时间 \( t \) 求导： \( \frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt} \) 。
-代入 \( \frac{dV}{dt} = 100, r = 5 \) ： \( 100 = 4\pi (5)^2 \frac{dr}{dt} = 100\pi \frac{dr}{dt} \) 。
-解得 \( \frac{dr}{dt} = \frac{1}{\pi} \approx 0.318 \text{ cm/s} \) 。
+(a) 球的体积 $ V = \frac{4}{3}\pi r^3 $ 。
+两边对时间 $ t $ 求导： $ \frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt} $ 。
+代入 $ \frac{dV}{dt} = 100, r = 5 $ ： $ 100 = 4\pi (5)^2 \frac{dr}{dt} = 100\pi \frac{dr}{dt} $ 。
+解得 $ \frac{dr}{dt} = \frac{1}{\pi} \approx 0.318 \text{ cm/s} $ 。
 
-(b) 设 \( V(r) = \frac{4}{3}\pi r^3 \) 。在 \( r = 5 \) 处的线性化为：
-\( V(5) = \frac{500}{3}\pi \) ， \( V'(5) = 4\pi (5)^2 = 100\pi \) 。
-\( L(r) = V(5) + V'(5)(r - 5) = \frac{500}{3}\pi + 100\pi (r - 5) \) 。
-当 \( r \) 从 5 增加到 5.1 时， \( \Delta r = 0.1 \) 。
-估算体积变化量： \( \Delta V \approx dV = V'(5) \Delta r = 100\pi (0.1) = 10\pi \approx 31.42 \text{ cm}^3 \) 。
-实际体积变化量： \( \Delta V = V(5.1) - V(5) = \frac{4}{3}\pi (5.1)^3 - \frac{4}{3}\pi (5)^3 = \frac{4}{3}\pi (132.651 - 125) = \frac{4}{3}\pi (7.651) \approx 32.05 \text{ cm}^3 \) 。
-误差仅为约 \( 0.63 \text{ cm}^3 \) ，说明线性化在 \( \Delta r \) 很小时是非常精确的。
+(b) 设 $ V(r) = \frac{4}{3}\pi r^3 $ 。在 $ r = 5 $ 处的线性化为：
+$ V(5) = \frac{500}{3}\pi $ ， $ V'(5) = 4\pi (5)^2 = 100\pi $ 。
+$ L(r) = V(5) + V'(5)(r - 5) = \frac{500}{3}\pi + 100\pi (r - 5) $ 。
+当 $ r $ 从 5 增加到 5.1 时， $ \Delta r = 0.1 $ 。
+估算体积变化量： $ \Delta V \approx dV = V'(5) \Delta r = 100\pi (0.1) = 10\pi \approx 31.42 \text{ cm}^3 $ 。
+实际体积变化量： $ \Delta V = V(5.1) - V(5) = \frac{4}{3}\pi (5.1)^3 - \frac{4}{3}\pi (5)^3 = \frac{4}{3}\pi (132.651 - 125) = \frac{4}{3}\pi (7.651) \approx 32.05 \text{ cm}^3 $ 。
+误差仅为约 $ 0.63 \text{ cm}^3 $ ，说明线性化在 $ \Delta r $ 很小时是非常精确的。
 </details>

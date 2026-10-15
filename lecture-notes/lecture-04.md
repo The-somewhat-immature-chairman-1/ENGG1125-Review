@@ -68,27 +68,27 @@ $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = e^u \cdot (-\sin x) = -e^{\
 <details>
 <summary>💡 点击查看答案与解题思路</summary>
 **解法一：利用导数的定义与洛必达法则（或泰勒展开）**
-原式分子分母在 \( x \to 0 \) 时均趋于 \( 0 \) ，属于 \( \frac{0}{0} \) 型。
-先将原式拆分： \( \lim_{x \to 0} \frac{f(x) - x + x - \sin x}{x^2} = \lim_{x \to 0} \frac{f(x) - x}{x^2} + \lim_{x \to 0} \frac{x - \sin x}{x^2} \) 。
+原式分子分母在 $ x \to 0 $ 时均趋于 $ 0 $ ，属于 $ \frac{0}{0} $ 型。
+先将原式拆分： $ \lim_{x \to 0} \frac{f(x) - x + x - \sin x}{x^2} = \lim_{x \to 0} \frac{f(x) - x}{x^2} + \lim_{x \to 0} \frac{x - \sin x}{x^2} $ 。
 
-观察第一部分： \( \lim_{x \to 0} \frac{f(x) - x}{x^2} = \lim_{x \to 0} \frac{\frac{f(x) - f(0)}{x} - 1}{x} \) 。
-因为 \( f'(0) = \lim_{x \to 0} \frac{f(x) - f(0)}{x} = 1 \) ，所以这实际上是导数的定义。此时分子趋于 \( 0 \) ，不能直接用洛必达。
+观察第一部分： $ \lim_{x \to 0} \frac{f(x) - x}{x^2} = \lim_{x \to 0} \frac{\frac{f(x) - f(0)}{x} - 1}{x} $ 。
+因为 $ f'(0) = \lim_{x \to 0} \frac{f(x) - f(0)}{x} = 1 $ ，所以这实际上是导数的定义。此时分子趋于 $ 0 $ ，不能直接用洛必达。
 考虑使用泰勒展开（如果学过）或者进一步变形：
-已知 \( f(x) \) 在 \( 0 \) 处可导，有 \( f(x) = f(0) + f'(0)x + o(x) = x + o(x) \) 。
-代入第一部分： \( \frac{f(x) - x}{x^2} = \frac{o(x)}{x^2} \) ，这在一般情况下极限不确定（除非 \( f(x) \) 二阶可导，但题设只给了一阶可导，所以这个拆分是陷阱！）。
+已知 $ f(x) $ 在 $ 0 $ 处可导，有 $ f(x) = f(0) + f'(0)x + o(x) = x + o(x) $ 。
+代入第一部分： $ \frac{f(x) - x}{x^2} = \frac{o(x)}{x^2} $ ，这在一般情况下极限不确定（除非 $ f(x) $ 二阶可导，但题设只给了一阶可导，所以这个拆分是陷阱！）。
 
 **正确的解法：利用导数的定义和极限的运算法则**
-为了能用上 \( f'(0)=1 \) ，我们凑出导数定义：
-原式 \( = \lim_{x \to 0} \frac{f(x) - f(0) - \sin x + \sin(0)}{x^2} = \lim_{x \to 0} \frac{\frac{f(x) - f(0)}{x} - \frac{\sin x}{x}}{x} \) 。
-由于 \( \lim_{x \to 0} \frac{f(x) - f(0)}{x} = 1 \) 且 \( \lim_{x \to 0} \frac{\sin x}{x} = 1 \) 。这是一个 \( \frac{1-1}{0} = \frac{0}{0} \) 形式。
-根据导数定义，如果极限 \( \lim_{x \to 0} \frac{f(x) - x}{x^2} \) 存在，则必须使用泰勒公式 \( f(x) = f(0) + f'(0)x + \frac{f''(0)}{2}x^2 + o(x^2) \) 。
-若 \( f(x) \) 二阶可导，则 \( \lim_{x \to 0} \frac{f(x) - x}{x^2} = \frac{f''(0)}{2} \) 。而 \( \lim_{x \to 0} \frac{x - \sin x}{x^2} = 0 \) 。
-因此最终结果为 \( \frac{f''(0)}{2} + 0 = \frac{f''(0)}{2} \) 。
+为了能用上 $ f'(0)=1 $ ，我们凑出导数定义：
+原式 $ = \lim_{x \to 0} \frac{f(x) - f(0) - \sin x + \sin(0)}{x^2} = \lim_{x \to 0} \frac{\frac{f(x) - f(0)}{x} - \frac{\sin x}{x}}{x} $ 。
+由于 $ \lim_{x \to 0} \frac{f(x) - f(0)}{x} = 1 $ 且 $ \lim_{x \to 0} \frac{\sin x}{x} = 1 $ 。这是一个 $ \frac{1-1}{0} = \frac{0}{0} $ 形式。
+根据导数定义，如果极限 $ \lim_{x \to 0} \frac{f(x) - x}{x^2} $ 存在，则必须使用泰勒公式 $ f(x) = f(0) + f'(0)x + \frac{f''(0)}{2}x^2 + o(x^2) $ 。
+若 $ f(x) $ 二阶可导，则 $ \lim_{x \to 0} \frac{f(x) - x}{x^2} = \frac{f''(0)}{2} $ 。而 $ \lim_{x \to 0} \frac{x - \sin x}{x^2} = 0 $ 。
+因此最终结果为 $ \frac{f''(0)}{2} + 0 = \frac{f''(0)}{2} $ 。
 
 **结论（严谨版）：**
-原式 \( = \lim_{x \to 0} \frac{ \frac{f(x) - f(0)}{x} - \frac{\sin x}{x} }{x} \) 。
-由导数定义及等价无穷小 \( \sin x = x - \frac{x^3}{6} + o(x^3) \) ，及 \( f(x) \) 的泰勒展开 \( f(x) = x + \frac{f''(0)}{2}x^2 + o(x^2) \) ：
-原式 \( = \lim_{x \to 0} \frac{ \left( 1 + \frac{f''(0)}{2}x + o(x) \right) - \left( 1 - \frac{x^2}{6} + o(x^2) \right) }{x} \)
-\( = \lim_{x \to 0} \frac{ \frac{f''(0)}{2}x + o(x) + \frac{x^2}{6} }{x} = \frac{f''(0)}{2} \) 。
+原式 $ = \lim_{x \to 0} \frac{ \frac{f(x) - f(0)}{x} - \frac{\sin x}{x} }{x} $ 。
+由导数定义及等价无穷小 $ \sin x = x - \frac{x^3}{6} + o(x^3) $ ，及 $ f(x) $ 的泰勒展开 $ f(x) = x + \frac{f''(0)}{2}x^2 + o(x^2) $ ：
+原式 $ = \lim_{x \to 0} \frac{ \left( 1 + \frac{f''(0)}{2}x + o(x) \right) - \left( 1 - \frac{x^2}{6} + o(x^2) \right) }{x} $
+$ = \lim_{x \to 0} \frac{ \frac{f''(0)}{2}x + o(x) + \frac{x^2}{6} }{x} = \frac{f''(0)}{2} $ 。
 （此题是典型的考查导数定义、极限四则运算以及高阶无穷小处理的压轴题，在期中考试中经常出现，用来区分优秀学生）。
 </details>

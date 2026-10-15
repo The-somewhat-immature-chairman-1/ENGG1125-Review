@@ -63,14 +63,14 @@
 
 <details>
 <summary>💡 点击查看答案与解题思路</summary>
-(a) 定义域要求： \( \frac{1+x}{1-x} \gt 0 \Rightarrow (1+x)(1-x) \gt 0 \Rightarrow -1 \lt x \lt 1 \) 。定义域为 \( (-1, 1) \) 。
-令 \( y = \ln\left( \frac{1+x}{1-x} \right) \) ，则 \( e^y = \frac{1+x}{1-x} \Rightarrow e^y(1-x) = 1+x \Rightarrow e^y - 1 = x(e^y + 1) \Rightarrow x = \frac{e^y - 1}{e^y + 1} \) 。
-由于 \( e^y \gt 0 \) ， \( x = 1 - \frac{2}{e^y + 1} \in (-1, 1) \) 。因此值域为全体实数 \( \mathbb{R} \) 。
+(a) 定义域要求： $ \frac{1+x}{1-x} \gt 0 \Rightarrow (1+x)(1-x) \gt 0 \Rightarrow -1 \lt x \lt 1 $ 。定义域为 $ (-1, 1) $ 。
+令 $ y = \ln\left( \frac{1+x}{1-x} \right) $ ，则 $ e^y = \frac{1+x}{1-x} \Rightarrow e^y(1-x) = 1+x \Rightarrow e^y - 1 = x(e^y + 1) \Rightarrow x = \frac{e^y - 1}{e^y + 1} $ 。
+由于 $ e^y \gt 0 $ ， $ x = 1 - \frac{2}{e^y + 1} \in (-1, 1) $ 。因此值域为全体实数 $ \mathbb{R} $ 。
 
-(b) \( f(-x) = \ln\left( \frac{1-x}{1+x} \right) = \ln\left( \left( \frac{1+x}{1-x} \right)^{-1} \right) = -\ln\left( \frac{1+x}{1-x} \right) = -f(x) \) 。所以 \( f(x) \) 是奇函数。
+(b) $ f(-x) = \ln\left( \frac{1-x}{1+x} \right) = \ln\left( \left( \frac{1+x}{1-x} \right)^{-1} \right) = -\ln\left( \frac{1+x}{1-x} \right) = -f(x) $ 。所以 $ f(x) $ 是奇函数。
 
-(c) 定义域要求 \( -1 \lt \frac{2x}{1+x^2} \lt 1 \) 。因为 \( 1+x^2 \gt 0 \) ，解得 \( x \in \mathbb{R} \) 。
-\( g(x) = \ln\left( \frac{1 + \frac{2x}{1+x^2}}{1 - \frac{2x}{1+x^2}} \right) = \ln\left( \frac{\frac{1+x^2+2x}{1+x^2}}{\frac{1+x^2-2x}{1+x^2}} \right) = \ln\left( \frac{(x+1)^2}{(x-1)^2} \right) = 2\ln\left( \left| \frac{x+1}{x-1} \right| \right) \) 。
-\( g(-x) = 2\ln\left( \left| \frac{-x+1}{-x-1} \right| \right) = 2\ln\left( \left| \frac{x-1}{x+1} \right| \right) = -2\ln\left( \left| \frac{x+1}{x-1} \right| \right) = -g(x) \) 。所以 \( g(x) \) 也是奇函数。
+(c) 定义域要求 $ -1 \lt \frac{2x}{1+x^2} \lt 1 $ 。因为 $ 1+x^2 \gt 0 $ ，解得 $ x \in \mathbb{R} $ 。
+$ g(x) = \ln\left( \frac{1 + \frac{2x}{1+x^2}}{1 - \frac{2x}{1+x^2}} \right) = \ln\left( \frac{\frac{1+x^2+2x}{1+x^2}}{\frac{1+x^2-2x}{1+x^2}} \right) = \ln\left( \frac{(x+1)^2}{(x-1)^2} \right) = 2\ln\left( \left| \frac{x+1}{x-1} \right| \right) $ 。
+$ g(-x) = 2\ln\left( \left| \frac{-x+1}{-x-1} \right| \right) = 2\ln\left( \left| \frac{x-1}{x+1} \right| \right) = -2\ln\left( \left| \frac{x+1}{x-1} \right| \right) = -g(x) $ 。所以 $ g(x) $ 也是奇函数。
 （此题综合考查了函数定义域、反函数求解、对数运算法则以及奇偶性证明，是典型的期中考试难题）。
 </details>
