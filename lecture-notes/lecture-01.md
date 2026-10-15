@@ -64,7 +64,9 @@ $$\sin(A+B) = \sin A \cos B + \cos A \sin B$$
 <details>
 <summary>💡 点击查看答案与解题思路</summary>
 (a) 定义域要求：
+
 $$ \frac{1+x}{1-x} \gt 0 \Rightarrow (1+x)(1-x) \gt 0 \Rightarrow -1 \lt x \lt 1 $$
+
 定义域为 $(-1, 1)$。
 
 令
