@@ -63,9 +63,15 @@ $$\sin(A+B) = \sin A \cos B + \cos A \sin B$$
 
 <details>
 <summary>💡 点击查看答案与解题思路</summary>
-(a) 定义域要求：$\frac{1+x}{1-x} \gt 0 \Rightarrow (1+x)(1-x) \gt 0 \Rightarrow -1 \lt x \lt 1$。定义域为$(-1, 1)$。
-令$y = \ln\left( \frac{1+x}{1-x} \right)$，则$e^y = \frac{1+x}{1-x} \Rightarrow e^y(1-x) = 1+x \Rightarrow e^y - 1 = x(e^y + 1) \Rightarrow x = \frac{e^y - 1}{e^y + 1}$。
-由于$e^y \gt 0$，$x = 1 - \frac{2}{e^y + 1} \in (-1, 1)$。因此值域为全体实数$\mathbb{R}$。
+(a) 定义域要求：
+$$ \frac{1+x}{1-x} \gt 0 \Rightarrow (1+x)(1-x) \gt 0 \Rightarrow -1 \lt x \lt 1 $$
+定义域为 $(-1, 1)$。
+
+令
+$$ y = \ln\left( \frac{1+x}{1-x} \right) $$
+则
+$$ e^y = \frac{1+x}{1-x} \Rightarrow e^y(1-x) = 1+x \Rightarrow e^y - 1 = x(e^y + 1) \Rightarrow x = \frac{e^y - 1}{e^y + 1} $$
+由于 $e^y \gt 0$， $x = 1 - \frac{2}{e^y + 1} \in (-1, 1)$。因此值域为全体实数 $\mathbb{R}$。
 
 (b)$f(-x) = \ln\left( \frac{1-x}{1+x} \right) = \ln\left( \left( \frac{1+x}{1-x} \right)^{-1} \right) = -\ln\left( \frac{1+x}{1-x} \right) = -f(x)$。所以$f(x)$是奇函数。
 
