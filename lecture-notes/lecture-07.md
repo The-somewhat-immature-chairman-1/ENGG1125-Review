@@ -65,8 +65,10 @@
 
 <details>
 <summary>💡 点击查看答案与解题思路</summary>
-(a) 矩形面积$A = xy = 100 \Rightarrow y = \frac{100}{x}$。
-围栏总长$L(x) = 2x + y = 2x + \frac{100}{x}$，定义域$x \gt 0$。
+
+(a) 矩形面积 \( A = xy = 100 \Rightarrow y = \frac{100}{x} \)。围栏总长：
+
+$$ L(x) = 2x + y = 2x + \frac{100}{x}, \quad x \gt 0 $$
 
 (b) 求导$L'(x) = 2 - \frac{100}{x^2}$。
 令$L'(x) = 0 \Rightarrow 2 = \frac{100}{x^2} \Rightarrow x^2 = 50 \Rightarrow x = \sqrt{50} = 5\sqrt{2}$（舍去负值）。

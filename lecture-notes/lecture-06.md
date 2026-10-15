@@ -63,12 +63,13 @@ Second Derivative Test: If$f'(c)=0$and$f''(c)>0$,$f$has a local minimum at$c$. I
 <details>
 <summary>💡 点击查看答案与解题思路</summary>
 (a) 求导（乘积法则）：
-$f'(x) = (x^2 - 3)e^x + (2x)e^x = (x^2 + 2x - 3)e^x = (x+3)(x-1)e^x$。
-因为$e^x \gt 0$恒成立，所以临界点为$x = -3$和$x = 1$。
-区间划分：
--$x \lt -3$时，$f'(x) \gt 0$，单调递增。
--$-3 \lt x \lt 1$时，$f'(x) \lt 0$，单调递减。
--$x \gt 1$时，$f'(x) \gt 0$，单调递增。
+
+$$ f'(x) = (x^2 - 3)e^x + (2x)e^x = (x^2 + 2x - 3)e^x = (x+3)(x-1)e^x $$
+
+因为 \( e^x \gt 0 \) 恒成立，所以临界点为 \( x = -3 \) 和 \( x = 1 \)。区间划分如下：
+- \( x \lt -3 \) 时， \( f'(x) \gt 0 \)，单调递增。
+- \( -3 \lt x \lt 1 \) 时， \( f'(x) \lt 0 \)，单调递减。
+- \( x \gt 1 \) 时， \( f'(x) \gt 0 \)，单调递增。
 
 (b) 由 (a) 和 First Derivative Test：
 - 在$x = -3$处，$f'$由正变负，有局部极大值$f(-3) = ((-3)^2 - 3)e^{-3} = 6e^{-3}$。

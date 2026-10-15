@@ -67,9 +67,11 @@ $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = e^u \cdot (-\sin x) = -e^{\
 
 <details>
 <summary>💡 点击查看答案与解题思路</summary>
+
 **解法一：利用导数的定义与洛必达法则（或泰勒展开）**
-原式分子分母在$x \to 0$时均趋于$0$，属于$\frac{0}{0}$型。
-先将原式拆分：$\lim_{x \to 0} \frac{f(x) - x + x - \sin x}{x^2} = \lim_{x \to 0} \frac{f(x) - x}{x^2} + \lim_{x \to 0} \frac{x - \sin x}{x^2}$。
+原式分子分母在 \( x \to 0 \) 时均趋于 \( 0 \)，属于 \( \frac{0}{0} \) 型。先将原式拆分：
+
+$$ \lim_{x \to 0} \frac{f(x) - x + x - \sin x}{x^2} = \lim_{x \to 0} \frac{f(x) - x}{x^2} + \lim_{x \to 0} \frac{x - \sin x}{x^2} $$
 
 观察第一部分：$\lim_{x \to 0} \frac{f(x) - x}{x^2} = \lim_{x \to 0} \frac{\frac{f(x) - f(0)}{x} - 1}{x}$。
 因为$f'(0) = \lim_{x \to 0} \frac{f(x) - f(0)}{x} = 1$，所以这实际上是导数的定义。此时分子趋于$0$，不能直接用洛必达。
